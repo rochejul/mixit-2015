@@ -1,0 +1,26 @@
+/*jshint esnext: true*/
+
+/**
+ * Main module to instantiate the application
+ * @author Julien Roche
+ * @version 1.0
+ * @since 1.0
+ */
+
+"use strict";
+
+window.app = window.app || {};
+
+(function (app) {
+    "use strict";
+
+    var ulElement = document.querySelector("ul");
+
+    app.users.fetch().forEach(function (user) {
+        var liElement = document.createElement("li");
+        liElement.innerHTML = user.toString();
+        ulElement.appendChild(liElement);
+    });
+})(window.app);
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBU0EsTUFBTSxDQUFDLEdBQUcsR0FBRyxNQUFNLENBQUMsR0FBRyxJQUFJLEVBQUcsQ0FBQzs7QUFFL0IsQ0FBQyxVQUFVLEdBQUcsRUFBRTtBQUNaLGdCQUFZLENBQUM7O0FBRWIsUUFDSSxTQUFTLEdBQUcsUUFBUSxDQUFDLGFBQWEsQ0FBQyxJQUFJLENBQUMsQ0FBQzs7QUFFN0MsT0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEVBQUUsQ0FBQyxPQUFPLENBQ3JCLFVBQUMsSUFBSSxFQUFLO0FBQ04sWUFBSSxTQUFTLEdBQUcsUUFBUSxDQUFDLGFBQWEsQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUM3QyxpQkFBUyxDQUFDLFNBQVMsR0FBRyxJQUFJLENBQUMsUUFBUSxFQUFFLENBQUM7QUFDdEMsaUJBQVMsQ0FBQyxXQUFXLENBQUMsU0FBUyxDQUFDLENBQUM7S0FDcEMsQ0FDSixDQUFDO0NBRUwsQ0FBQSxDQUFFLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQyIsImZpbGUiOiJpbmRleC1lczUuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKmpzaGludCBlc25leHQ6IHRydWUqL1xyXG5cclxuLyoqXHJcbiAqIE1haW4gbW9kdWxlIHRvIGluc3RhbnRpYXRlIHRoZSBhcHBsaWNhdGlvblxyXG4gKiBAYXV0aG9yIEp1bGllbiBSb2NoZVxyXG4gKiBAdmVyc2lvbiAxLjBcclxuICogQHNpbmNlIDEuMFxyXG4gKi9cclxuXHJcbndpbmRvdy5hcHAgPSB3aW5kb3cuYXBwIHx8IHsgfTtcclxuXHJcbihmdW5jdGlvbiAoYXBwKSB7XHJcbiAgICAndXNlIHN0cmljdCc7XHJcblxyXG4gICAgdmFyXHJcbiAgICAgICAgdWxFbGVtZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcigndWwnKTtcclxuXHJcbiAgICBhcHAudXNlcnMuZmV0Y2goKS5mb3JFYWNoKFxyXG4gICAgICAgICh1c2VyKSA9PiB7XHJcbiAgICAgICAgICAgIHZhciBsaUVsZW1lbnQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdsaScpO1xyXG4gICAgICAgICAgICBsaUVsZW1lbnQuaW5uZXJIVE1MID0gdXNlci50b1N0cmluZygpO1xyXG4gICAgICAgICAgICB1bEVsZW1lbnQuYXBwZW5kQ2hpbGQobGlFbGVtZW50KTtcclxuICAgICAgICB9XHJcbiAgICApO1xyXG5cclxufSkod2luZG93LmFwcCk7XHJcbiJdfQ==
