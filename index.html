@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>ES6 sample application</title>
+        <meta charset="UTF-8">
+
+        <!-- Import styles -->
+        <link rel="stylesheet" href="styles/index.css" />
+
+        <!-- Import external JavaScripts -->
+        <script type="text/javascript" src="node_modules/es6-module-loader/dist/es6-module-loader.js"></script>
+        <script type="text/javascript" src="node_modules/systemjs/dist/system.js"></script>
+        <script type="text/javascript" src="node_modules/babel/browser-polyfill.js"></script>
+    </head>
+
+    <body>
+        <h1>A super list</h1>
+        <ul></ul>
+
+        <hr />
+        <br />
+        <button type="button">Find by name</button>
+
+        <!-- Import at the end the JavaScript (to avoid to manage the DOMContentLoaded event -->
+        <script type="text/javascript" src="scripts/services/users-es5.js"></script>
+        <script type="text/javascript" src="scripts/index-es5.js"></script>
+        <script type="text/javascript">
+            (function () {
+                'use strict';
+
+                System
+                    .import('index')
+                    .then(function() {
+                        console.log('The application is loaded');
+                    });
+            })();
+        </script>
+    </body>
+</html>
