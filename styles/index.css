@@ -1,0 +1,17 @@
+body {
+  background-color: yellow;
+}
+body h1 {
+  font-size: 4em;
+  color: orangered;
+}
+body ul {
+  background-color: white;
+  margin: 1em 1em 1em 1em;
+}
+body ul li {
+  font-style: italic;
+  font-weight: bold;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4Lmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDRSx3QkFBQTs7QUFERixJQUdFO0VBQ0UsY0FBQTtFQUNBLGdCQUFBOztBQUxKLElBUUU7RUFDRSx1QkFBQTtFQUNBLHVCQUFBOztBQVZKLElBUUUsR0FJRTtFQUNFLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQ0FBQSIsImZpbGUiOiJ1bmRlZmluZWQifQ== */
