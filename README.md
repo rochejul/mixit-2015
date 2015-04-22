@@ -12,3 +12,5 @@ Afin de pouvoir l'utiliser, je vous demande:
 * D'installer Chrome, Canary et Firefox
 
 Merci à vous !
+
+si vous  souhaitez, vous pouvez utiliser mon generateur basé sur yeoman pour avoir exemples  projets ES6 basé sur babel / traceur  grunt / gulp: https://github.com/rochejul/generator-project-esnow
